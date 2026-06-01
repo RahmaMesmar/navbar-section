@@ -1,8 +1,98 @@
-*{
-    margin:0;
-    padding:0;
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbar{
-    background-color: aqua;
-    padding: 50px 0;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+margin: auto;
+width: 95%;
+}
+.header{
+  padding: 21.84px;
+}
+.logo{
+ display: flex;
+ flex-wrap: wrap;
+ font-family: "Cormorant Garamond";
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header .container{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  align-items: center;
+}
+.list ul{
+  display: flex;
+   flex-wrap: wrap;
+   gap:60px ;
+}
+.list a{
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+.icons ul{
+  display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.men{
+  display: none;
+}
+@media  screen and (min-width:0px) and (max-width:768px) {
+  .collections .collection{
+    width: calc(100%);
+  }
+  .list{
+    display: none;
+  }
+}
+@media  screen and (min-width:768px) and (max-width:1024px) {
+
+  .collections .collection{
+    width: calc((100% - 30px) / 2 );
+  }
+}
+@media  screen and (min-width:1024px) and (max-width:1280px) {
+.collections .collection{
+  width: calc((100% - 90px) / 4)
+}
+}
+
+.cormorant-garamon{
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+/* start collection section */
+.collections{
+  text-align: center;
+   font-family: "Cormorant Garamond", serif;
+   color: 1A1A1A;
+}
+.collection img{
+  width: 100%;
+}
+.collections .row{
+  gap: 30px;
 }
